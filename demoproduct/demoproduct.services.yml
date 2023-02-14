@@ -1,0 +1,4 @@
+services:
+  demoproduct.qr_generator:
+    class: Drupal\demoproduct\GenerateQr
+    arguments: ['qr_content']

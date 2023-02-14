@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - demoproduct
+  theme:
+    - olivero
+id: qrcodeblock
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: qr_code
+settings:
+  id: qr_code
+  label: 'QR code block'
+  label_display: '0'
+  provider: demoproduct
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      product: product

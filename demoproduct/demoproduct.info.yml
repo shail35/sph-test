@@ -1,0 +1,7 @@
+name: demoproduct
+type: module
+description: 'Demo Module to add products'
+package: Demo Product modules
+core_version_requirement: ^9.4
+dependencies:
+  - drupal:node
